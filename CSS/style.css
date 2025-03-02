@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #E1FFBB;
+}
+
+.navbar{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar.transparent {
+    background: transparent;
+}
+
+.navbar.solid {
+    background: black;
+}
+
+.nameLogo{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.nameLogo > a{
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.nameLogo > a:hover{
+    transition: all .5s;
+}
+
+.apps{
+    display:flex;
+    align-items: center;
+}
+
+.apps > ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.apps > ul > li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.apps > ul > li > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    transition: all .5s;
+}
+
+.apps > ul > li > a:hover{
+    transition: all .5s;
+}
+
+.icons a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: all .5s;
+}
+
+.icons a:hover{
+    transition: all .5s;
+}
+
+/* CAROUSEL */
+.carouselGame > img{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-items{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+}
+
+.carousel-items > h1{
+    font-size: 3.7rem;
+}
+
+.carousel-desc{
+    display: flex;
+    margin-top: 30px;
+}
+
+.carousel-desc > a > button{
+    color: #000;
+    background-color: #fff;
+    border: none;
+    padding: 20px 40px;
+    margin-right: 20px;
+}
+
+/* SEARCH */
+.searchGame{
+    background-color: #EDEDED;
+    padding: 70px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchGame > h2{
+    width: 48%;
+    font-size: 2.3rem;
+}
+
+.search-content{
+    width: 48%;
+}
+
+.search-bar{
+    display: flex;
+}
+
+.search-bar > input{
+    padding: 18px 39% 18px 50px;
+    border: none;
+    font-size: 1.1rem;
+    margin-right: 2.5%;
+    color: #000;
+}
+
+.search-bar > input::placeholder{
+    color: #bababa;
+}
+
+.search-bar > button{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0 5%;
+}
+
+.search-content p{
+    font-size: 17px;
+    margin-top: 4.5%;
+}
+
+.search-content > a{
+    color: #000;
+    text-decoration:underline;
+    font-size: 17px;
+    margin-top: 18px;
+}
+
+.search-content > a > i{
+    color: #000;
+    text-decoration:underline;
+    font-size: 17px;
+    margin-top: 18px;
+}
+
+/* INTRO */
+.introGame >h1 {
+    color: #333;
+}
+
+.game-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-card {
+    width: 300px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.game-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.game-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.game-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.game-card a:hover {
+    background-color: #0056b3;
+}
+
+/* INTRO */
+.introGame{
+    padding: 70px 40px;
+    background-color: #E8E4E4;
+}
+
+.intro-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-container{
+    width: 10%;
+    height: auto;
+}
+
+.intro-container > img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* PRODUCTS */
+.productsGame{
+    background-color: #2E2926;
+    padding: 70px 40px;
+}
+
+.productsGame > h1{
+    color: #fff;
+    margin: 30px 0 100px 0;
+    font-size: 2.5rem;
+}
+
+.products-content{
+    display: flex;
+    justify-content: space-between;;
+    color: #fff;
+    margin-bottom: 150px;
+}
+
+.products-img{
+    width: 48%;
+    background-color: #EDEDED;
+}
+
+.products-img > img{
+    width: 100%;
+    height: 100%; 
+}
+
+.products-desc{
+    width: 48%;
+}
+
+.products-desc > h3{
+    font-size: 2rem;
+}
+
+.products-desc > p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.products-desc > a > button{
+    background-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 24px 40px;
+    border: 2px solid #6e6e6e;
+    transition: border-color 0.3s;
+}
+
+/* FOOTER */
+footer{
+    font-family: "SUSE", system-ui;
+    padding: 60px 20px 30px 20px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.footer__icon{
+    width: 100%;
+    font-size: 1.5rem;
+}
+footer p{
+    margin: 0;
+}
+footer p a{
+    color: #989898;
+    text-decoration: none;
+    transition: 0.3s;
+}
+footer p a:hover{
+    color: #00f2ff;
+    transition: 0.3s;
+    text-decoration: underline;
+}

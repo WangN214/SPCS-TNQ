@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playeah - forum</title>
+
+    <!-- FONT AWESOME CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FORUMS CSS -->
+    <link rel="stylesheet" href="./../CSS/forums.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./../CSS/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav id="navbar" class="navbar">
+            <div class="nameLogo">
+                <a href="./../index.html"><i class="fab fa-product-hunt"></i> PLAYEAH</a> 
+            </div>
+            <div class="apps">
+                <ul>
+                    <li><a href="#">REVIEW</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="./game.html">GAME LIBRARY</a></li>
+                    <li><a href="./forums.html">FORUM</a></li>
+                </ul>
+            </div> 
+            <div class="icons">
+                <a href="#"><i class="fa fa-heart"></i></a>
+                <a href="./login.html"><i class="fa fa-user-alt"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CAROUSEL -->
+     <section class="carouselGame">
+        <img src="./../assets/IMG/f6524d67-6173-4271-8acd-71902605c159.webp" alt="#">
+     </section>
+
+    <!-- COMMENT -->
+    <h1>Game Discussion Forum</h1>
+
+    <div class="post-form">
+        <input type="text" id="title" placeholder="Tiêu đề bài viết">
+        <textarea id="content" placeholder="Nội dung"></textarea>
+        <button id="postBtn">Đăng bài</button>
+    </div>
+
+    <div id="posts"></div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer__icon">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-snapchat"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Powered by <a target="_blank" href="https://github.com/WangN214">Trieu Nhat Quang</a></p>
+    </footer>
+
+    <!-- FIREBASE JS -->
+    <script type="module" src="./../JS/firebase-config.js"></script>
+
+    <!-- FORUMS JS -->
+     <script type="module" src="./../JS/forums.js"></script>
+
+    <!-- MAIN JS -->
+     <script type="module" src="./../JS/main.js"></script>
+</body>
+</html>
